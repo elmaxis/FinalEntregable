@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import { Box, Button, TextField } from '@mui/material';
 import { NewContext } from '../context/Context';
 import { useNavigate } from "react-router-dom";
+import "../Style/Style.css"
 
 const Login = () => {
     const [values, setValues] = useState({email: "", password: ""});    
@@ -17,12 +18,17 @@ const Login = () => {
     }
 
     return (
+        
         <Box 
+            className="Plogin"
             component="form" 
-            sx={{display: "flex", flexDirection: "column", gap: "20px", width: "20vw"}}
+            // sx={{display: "flex", flexDirection: "column", gap: "20px", width: "20vw"}}
             onSubmit={handleSubmit}
-        >
+        >   
+        <Box className="d">
+            <h2>Inicio de Sesión</h2>
             <TextField
+                className='celda'
                 name='email'
                 size='small'
                 type="text"
@@ -32,17 +38,19 @@ const Login = () => {
                 onChange={(e) => setValues({...values, email: e.target.value})}
             />
             <TextField 
+                className='celda'
                 name='password'
                 size='small'
                 type="password"
-                label="password"
+                label="Password"
                 placeholder='Ingrese su contraseña'
                 value={values.password}
                 onChange={(e) => setValues({...values, password: e.target.value})}
             />
-            <Button type='submit' size="small" variant="contained">
+            <Button  className='campologin' type="submit" size="small" variant="contained">
                 Ingresar
             </Button>
+            </Box>
 
         </Box>
     )

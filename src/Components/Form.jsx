@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "../Style/Style.css"
 
 
 const Form = () => {
@@ -9,6 +10,7 @@ const Form = () => {
 
   
   const handleSubmit = (e) => {
+   
     e.preventDefault();
     if (nombre.trim().length < 5) {
       setValues("Por favor verifique su información personal nuevamente");
@@ -17,7 +19,7 @@ const Form = () => {
     } 
     else {
       setValues(
-        `Gracias ${nombre}, te contactaremos cuanto antes vía mail`
+        `Gracias ${nombre}!, te contactaremos cuanto antes vía mail.`
           
       )    
     }
@@ -42,8 +44,8 @@ const Form = () => {
                 onChange={(e) => setEmail(e.target.value)}>
             </input>
 
-            <div>
-            <button form='formulario' btn="submit">Enviar</button>
+            <div >
+            <button className="botonform" form='formulario' btn="submit">Enviar</button>
             </div>
 
             <div>

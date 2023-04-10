@@ -20,8 +20,8 @@ const selectItem = () => {
     <div className="card">
       <div onClick={selectItem} style={{cursor: "pointer"}}>
       <p>{id}</p>
-      <p>{name}</p>
-      <p>{username}</p>
+      <p className="nameCard">{name}</p>
+      <p className="userName">{username}</p>
       <img src="./images/doctor.jpg" alt='Doctor' style={{width: "100%"}}/>           
         </div>
         <FavoriteButton item={{name, username, id}} />

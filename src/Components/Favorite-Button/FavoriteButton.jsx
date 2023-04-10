@@ -15,7 +15,7 @@ const FavoriteButton = ({ item }) => {
             <IconButton onClick={() => dispatch({ type: "FAVS", payload: item })}>
             {
                 isFavorite ? (
-                <FavoriteRoundedIcon />
+                <FavoriteRoundedIcon className='favButton'/>
                 ) : (
                 <FavoriteBorderRoundedIcon />
                 )

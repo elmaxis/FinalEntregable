@@ -12,7 +12,7 @@ code {
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  color: rgba(220, 26, 26, 0.733);
   padding: 10px;
   border: none;
   width: 100%;
@@ -70,14 +70,14 @@ footer > p{
   padding-top: 0.7rem;
 }
 
-form{
+/* form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 300px;
   height: 100px;
   margin: 0 auto;
-}
+} */
 
 .card{
   display: flex;
@@ -87,6 +87,15 @@ form{
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
+  text-align: center;
+}
+
+.nameCard {
+  font-weight: bold;
+}
+
+.userName {
+  font-style: italic;
 }
 
 .card:hover{
@@ -164,4 +173,6 @@ tr:nth-child(even) {
 .pphone { grid-area: 3 / 5 / 4 / 6; border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color: grey; }
 
 .pweb { grid-area: 3 / 6 / 4 / 7;  border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color: grey;}
+
+
 
