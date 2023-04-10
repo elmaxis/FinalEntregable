@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
-import { NewContext } from '../../context/ContextNuevo'
+import { NewContext } from '../../context/Context'
 import { Box, IconButton, Tooltip } from '@mui/material';
 import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
 import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 
 const FavoriteButton = ({ item }) => {
+    console.log(item);
     const { state, dispatch } = useContext(NewContext);
     const isFavorite = state.data.some(element => element.id === item.id);
 

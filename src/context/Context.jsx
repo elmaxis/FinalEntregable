@@ -14,7 +14,7 @@ const handleDispatch = (state, {type, payload}) => {  //action es como una espec
                 user: payload
             }
         case "LOGOUT":
-                localStorage.clear(); //al cerrar sesión se vayan los favoritos.
+                localStorage.clear(); 
                 sessionStorage.clear();
                 return {
                     ...state,
@@ -41,7 +41,7 @@ const NewContextProvider = ({children}) => {
     const initialState = {
         isLogged: !!sessionStorage.getItem("token"),  // con !! hago el ternario. Si es true, me pasa a false
         user: null,
-        data: JSON.parse(localStorage.getItem("favoritos")) ?? []  //si no hay nada que me dé el arreglo vacio //hago que al meterlos en favoritos me los siga conservando
+        data: localStorage.getItem("favoritos") ? JSON.parse(localStorage.getItem("favoritos")) : []  //si no hay nada que me dé el arreglo vacio //hago que al meterlos en favoritos me los siga conservando
     };
 
 //reducer
@@ -55,7 +55,7 @@ const NewContextProvider = ({children}) => {
         <NewContext.Provider value={propiedades}>
             {children}
         </NewContext.Provider>
-    );
+    )
 }
 
 

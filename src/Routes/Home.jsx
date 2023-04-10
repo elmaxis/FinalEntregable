@@ -30,10 +30,14 @@ return (
                 key={detail.id} 
                 name={detail.name} 
                 username={detail.username} 
-                id={detail.id}
-          />
-        )
-      : null}
+                id={detail.id}          
+                />
+                
+                )
+                : null
+                
+              }
+              
     </div>
   </main>
   )

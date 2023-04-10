@@ -1,7 +1,7 @@
 
 import Login from "../Routes/Login";
 import Home from "../Routes/Home";
-import Favs from "../Routes/Favs";
+import Favorites from "../Routes/Favorites";
 import Contact from "../Routes/Contact";
 import Detail from "../Routes/Detail"
 import Layout from "../Components/Layout/Layout";
@@ -17,7 +17,7 @@ export const rutas = [
     {
         id: 2,
         path: "/favoritos",
-        Component: Favs
+        Component: Favorites
     },
     {
         id: 3,
