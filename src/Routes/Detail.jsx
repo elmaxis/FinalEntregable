@@ -25,7 +25,7 @@ const Detail = () => {
 
   return (
     <Box>
-      <h1>Detail Dentist id </h1>
+      <h1 className='titular2'>Detalle Dentista Seleccionado </h1>
       <div className="container">
         <h3 class="codigo">Id</h3>
         <h3 class="Name">Name</h3>
@@ -42,8 +42,8 @@ const Detail = () => {
         <p class="pweb">{details.website}</p>      
       </div>
       
-      <Button>
-        <Link to='/home'>Volver al inicio</Link>
+      <Button >
+        <Link className="botonform" to='/home'>Volver al inicio</Link>
       </Button>
 
     </Box>  

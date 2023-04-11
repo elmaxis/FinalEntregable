@@ -22,7 +22,7 @@ const Home = () => {
 
 return (
   <main className="">
-    <h1>Home</h1>
+    <h1 className='titular2'>Home</h1>
     <div className="card-grid">
       {details.length
         ? details.map((detail) =>

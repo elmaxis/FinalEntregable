@@ -38,13 +38,13 @@ const Layout = () => {
                 <Typography variant="body1">{state.user}</Typography>
                 <Box>                    
                     <Button onClick={handleThemeBottom}>
-                        <DarkModeIcon className="imgperfil" alt="boton modo Dark" sx={{color: "grey", background: "white"}} />
+                        <DarkModeIcon className="imgperfil" alt="boton modo Dark" sx={{color: "white"}} />
                     </Button>
                 </Box>
                 <Box>
                     <Tooltip title="Cerrar Sesión">
                         <IconButton onClick={() => dispatch({type: "LOGOUT"})}>
-                            <ExitToAppRoundedIcon size={30}/>
+                            <ExitToAppRoundedIcon size={30} sx={{color: "white"}}/>
                         </IconButton>
                     </Tooltip>
                 </Box>

@@ -102,11 +102,20 @@
   
 .botonform:hover {
     background: #764ba2;
+    color: white;
+    justify-content: right;
   }
   
 
-.Contacto p {
+.titular p {
     text-align: center;
     margin-bottom: 20px;
+
 }
 
+.titular2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  height: 70px;
+}

@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import { NewContext } from "../context/Context";
 import FavoriteButton from "./Favorite-Button/FavoriteButton";
-import { Button } from "@mui/material";
 import { useNavigate } from "react-router";
 
 
@@ -18,14 +17,14 @@ const selectItem = () => {
 
   return (
     <div className="card">
+      <div className="darkCard">
       <div onClick={selectItem} style={{cursor: "pointer"}}>
-      <p>{id}</p>
+      <img src="./images/doctor.jpg" alt='Doctor' style={{width: "100%"}}/>           
       <p className="nameCard">{name}</p>
       <p className="userName">{username}</p>
-      <img src="./images/doctor.jpg" alt='Doctor' style={{width: "100%"}}/>           
         </div>
         <FavoriteButton item={{name, username, id}} />
-        
+        </div>
     </div>
   );
 };

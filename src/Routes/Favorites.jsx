@@ -16,7 +16,7 @@ const Favorites = () => {
 
   return (
     <>
-    <h1>Details Favs</h1>
+    <h1 className="titular2">Favoritos</h1>
     <div className="card-grid">
 
       {
