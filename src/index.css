@@ -139,6 +139,7 @@ tr:nth-child(even) {
   color: white;
 }
 
+
 .container {  display: grid;
   grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
   grid-template-rows: 1fr 1fr 1.4fr;
@@ -175,4 +176,51 @@ tr:nth-child(even) {
 .pweb { grid-area: 3 / 6 / 4 / 7;  border: 1px solid #125e82; text-align: center; padding-top: 10px; background-color: grey;}
 
 
+/*fOOTER */
+
+.footer {
+  margin-top: auto;
+  padding: 2rem 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+  filter: brightness(0);
+  
+}
+
+.DhLogo{
+  max-width: 20%;
+}
+
+.icon {
+  max-width: 2rem;
+  height: auto;
+}
+
+.top {
+  text-transform: uppercase;
+  padding: 1rem;
+  background: #f21d1d;
+  border: none;
+  color: white;
+  margin-top: 2rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.top:hover{
+  background-color: #9e3434;
+}
+
+.logo{
+  display: flex;
+  align-items: left;
+  height: auto;
+  text-align: left;
+  margin-right: 52%;
+}
 

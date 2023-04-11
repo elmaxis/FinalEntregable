@@ -22,9 +22,11 @@ function App() {
                 {
                 rutas.map(({ id, path, Component }) => (
                       <Route key={id} path={path} element={<Component />} />                      
-                  ))          
+                  ))     
                   
-                }                    
+                  
+                }  
+                                 
               </Route>      
             </Route>
             <Route path='/' element={<Navigate to="/login" />}/>          

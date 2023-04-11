@@ -6,7 +6,7 @@ import ExitToAppRoundedIcon from '@mui/icons-material/ExitToAppRounded';
 import { DarkModeContext } from '../../context/DarkModeContext';
 import Footer from "../Footer";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { grey } from '@mui/material/colors';
+
 
 
 
@@ -29,6 +29,7 @@ const Layout = () => {
     return (    
         <Fragment>
             <Box className="Nav" component="header" >
+                <img src="/images/logo.png" alt="logo" className="logo" />
                 <ul className="UlLayout" >
                     <li onClick={() => navigate("/home")} style= {{cursor: "pointer"}}>Home</li>
                     <li onClick={() => navigate("/contact")} style= {{cursor: "pointer"}}>Contact</li>

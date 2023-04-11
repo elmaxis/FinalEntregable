@@ -13,6 +13,8 @@ const Navbar = () => {
 
     
     <div className={ isModeDark? "dark" : "clasequenoexiste"}>
+
+    
     <nav>
 
 
